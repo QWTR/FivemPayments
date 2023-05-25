@@ -1,0 +1,31 @@
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.MainDivAllServers{
+    width: 100vw;
+    height: 100vh;
+
+    display: block;
+}
+.MaintopDiv{
+    position: relative;
+    width: 100vw;
+    height: 100px;
+    background: #040B1B;
+}
+.MainMainDiv{
+    position: relative;
+    width: 100vw;
+    height: calc(100% - 175px);
+    background:url(chmurki.png), linear-gradient(107.56deg, #14368E 0%, #071030 100%);
+    background-blend-mode: overlay;
+}
+.MainbotDiv{
+    position: relative;
+    width: 100vw;
+    height: 75px;
+    bottom: 0;
+    background: #040B1B;
+}

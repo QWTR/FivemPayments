@@ -1,0 +1,1103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --bgColor:#F0F0F0;
+    --bgColorP:#3E91F3;
+    --cfgBg:#FAF9FF;
+    --txtcolor:#EEEEEE;
+    --stxtcolor:#3E91F3;
+    --borderscolor:#CCCCCC;
+    --borderscolorT:#CCCCCC;
+    --blacktxt: #0a0909;
+    --htext: #3e7ff8;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--txtcolor);
+    background:linear-gradient(70deg,#0a104b,#051b96 70%);
+    background-repeat: no-repeat;
+}
+ .holder{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+ .loginForm{
+    transition: all 0.3s;
+    display: block;
+    width: 280px;
+    background: #0d0d0e;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.712);
+}
+ .loginForm div, input{
+    position: relative;
+    top: 10%;
+    background: transparent;
+}
+ .loginForm h5{
+    color: white;
+}
+ input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: var(--txtcolor);
+    width: 80%;
+    padding: .3rem;
+}
+ input[type="submit"]{
+    border: 1px solid #fff;
+    background: transparent;
+    color: var(--txtcolor);
+    width: 80%;
+    padding: .3rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+ input[type="submit"]:hover{
+    background: #051b96;
+    border: 1px solid #051b96;
+}
+ input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+ .UserPanelHolder{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bgColor);
+    display: flex;
+    color: var(--txtcolor);
+}
+ .UserPanelmenu{
+    background: var(--bgColorP);
+    border: 1px solid var(--borderscolor);
+    width: 260px;
+    height: 102%;
+    position: relative;
+    user-select: none;
+    border-radius: 0px 0px 0px 0px;
+}
+.UserPanelmenu p{
+    
+    position: relative;
+    cursor: pointer;
+    left: 50%;
+    top: 15%;
+    font-size: 1.2rem;
+    transform: translateX(-35%);
+    transition: all 0.3s;
+}
+ .UserPanelmenu p:hover{
+    color: #ffffff;
+}
+ .activeumenu{
+    text-shadow: 0 0 4px #ffffff;
+    color: #ffffff;
+}
+ .logoutUpanel{
+    cursor: pointer;
+    font-size: 1.2rem;
+    transform: translateX(-35%);
+    transition: all 0.3s;
+    bottom: 10%;
+    left: 41%;
+    position: absolute;
+}
+ .logoutUpanel:hover{
+    color: var(--htext);
+}
+ .logoMenuUP{
+    text-align: center;
+    position: relative;
+    top: -1rem;
+    font-size: 1.9rem;
+}
+ .logoMenuUP img{
+    position: relative;
+    margin: 0 auto;
+    left: 0rem;
+    top: 1.8rem;
+    width: 19rem;
+}
+ .UserPanelMain{
+    position: relative;
+    background: var(--bgColor);
+    width: calc(100% - 260px);
+    height: 100%;
+}
+ .UserPanelMainPage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.7s;
+    transform: translateY(0%);
+}
+  .stitle{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 66px;
+    top: 80px;
+/* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: var(--blacktxt);
+}
+ .stitle span{
+    position: absolute;
+    top:100% ;
+    color: rgba(204, 204, 204, 1);
+    font-size: 1rem;
+}
+ .dupa{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    
+}
+ .dupa i{
+    font-size: 6rem;
+}
+ .dupa p{
+    margin: 1rem;
+}
+ .moneyChart{
+    font-family: 'Montserrat', sans-serif;
+    background: var(--cfgBg);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 77%;
+    height: 35vh;
+    margin: 0 66px;
+    border: 1px solid var(--borderscolor);
+    border-radius: 40px;
+    top: 20vh;
+    position: relative;
+}
+ .gowno{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    width: 95%;
+    height: 25vh;
+    position: relative;
+    margin: auto;
+    top: 4vh;
+}
+ .moneyChart h3{
+    font-weight: 600;
+    color: var(--blacktxt);
+}
+ .LastWidthUPEI{
+    box-sizing: border-box;
+    position: absolute;
+    width: 77%;
+    height: 42vh;
+    left: 66px;
+    bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--cfgBg);
+    border: 1px solid var(--borderscolor);
+    border-radius: 40px 40px 0px 0px;
+}
+ .LastWidthUPEI{
+    color: var(--blacktxt);
+    
+}
+ .LastWidthUPEI h3{
+    font-weight: 600;
+    color: var(--blacktxt);
+    text-align: center;
+    padding: 10px;
+}
+
+ .noeloeloscroll{
+    display: block;
+    height: 35vh;
+    overflow-y: auto;
+    width: 100%;
+}
+ .noeloeloscroll::-webkit-scrollbar{
+    display: none;
+}
+ .noeloeloscroll table{
+    width: 100%;
+
+}
+ .noeloeloscroll tbody{
+    transform: rotate(180deg);
+    
+}
+ .LastWidthUPEI tr{
+   
+    width: 100%;
+    margin: auto;
+    background: rgba(41, 41, 41, 0);
+    height: 3rem;
+    border-bottom:1px solid #D9D9D9;
+    border-top: 1px solid #D9D9D9;
+    border-collapse: collapse;
+    
+}
+ .LastWidthUPEI th{
+    text-align: center;
+    
+    border-bottom:none;
+}
+ .LastWidthUPEI td{
+    direction: ltr;
+    transform: rotate(-180deg);
+    text-align: center;
+    word-wrap: break-word;
+    padding: 5px;
+
+    border-bottom:none;
+}
+ .WIDID{
+    font-style: normal;
+    font-weight: 600;
+    align-items: center;
+    color: var(--stxtcolor);
+}
+ .realizedWW{
+    color: #fff;
+    padding: 2px 7px;
+    background: #5138ee;
+    border-radius:10px;
+}
+ .AccountMPinfo{
+    width: 250px;
+    height: 100vh;
+    background: var(--cfgBg);
+    border: 1px solid var(--borderscolor);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 00px 0px 0px 00px;
+    overflow: hidden;
+}
+ .accBalance{
+    width: 100%;
+    height: 116px;
+    background: var(--bgColorP);
+    border-radius: 00px 0px 0px 00px;
+}
+ .accBalance > div{
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    top: 20px;
+    color: var(--blacktxt);
+
+}
+ .accBalance > div > p{
+    padding: 10px;
+    background: var(--bgColor);
+    border: 1px solid var(--borderscolor);
+    border-radius: 10px;
+    font-size: 20px;
+}
+ .accBalance > div > p >div{
+    font-weight: 600;
+}
+ .loghist{
+    position: relative;
+    top: 1.5rem;
+   
+    height: fit-content;
+    max-height: 81%;
+    overflow: auto;
+   
+}
+ .upeilhist{
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+ .loghist h4{
+    margin: 0.3rem 0;
+    color: var(--blacktxt);
+    font-weight: 500;
+    text-align: center;
+}
+ .lllog{
+ 
+    width: 80%;
+    border: 1px solid var(--borderscolor);
+    border-radius: 15px;
+    background: var(--bgColor);
+    color: var(--stxtcolor);
+    padding: 5px 10px;
+    position: relative;
+    margin: 0.5rem auto;
+}
+ .lllog div span{
+   
+    color: var(--blacktxt);
+}
+ .toblur{
+    filter: blur(0.25rem);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+ .toblur:hover{
+    filter: blur(0rem);
+}
+/*last clients*/
+ .UserPanelLastClient{
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    transition: transform 0.7s;
+    transform: translateY(100%);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+ .allClientsUP{
+   
+    width: 97%;
+    position: relative;
+    margin: auto;
+}
+
+ .allClientsUP h3{
+    color: var(--stxtcolor);
+    position: relative;
+    top: 1rem;
+    text-align: center;
+}
+ .LCUPTAB{
+    background: var(--cfgBg);
+    display: block;
+    height: fit-content;
+    border-radius: 15px 15px 0 0px;
+    max-height: 80vh;
+    position: relative;
+    overflow-y: auto;
+    top: 2rem;
+ 
+    width: 100%;
+}
+ .LCUPTAB::-webkit-scrollbar{
+    display: none;
+}
+ .LCUPTAB table{
+    width: 100%;
+    position: relative;
+    top: 1rem;
+}
+ .LCUPTAB tbody{
+    transform: rotate(180deg);
+    
+}
+ .LCUPTAB tr{
+    color: var(--blacktxt);
+    width: 100%;
+    margin: auto;
+    background: rgba(41, 41, 41, 0);
+    height: 3rem;
+    border-bottom:1px solid #D9D9D9;
+    border-top: 1px solid #D9D9D9;
+    border-collapse: collapse;
+    
+}
+ .LCUPTAB th{
+    text-align: center;
+    
+    border-bottom:none;
+}
+.LCUPTAB td{
+    direction: ltr;
+    transform: rotate(-180deg);
+    text-align: center;
+    word-wrap: break-word;
+    padding: 5px;
+  
+    border-bottom:none;
+}
+
+/*edit cfg*/
+.UserPanelEditPage{
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    transition: transform 0.7s;
+    transform: translateY(100%);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.Allitems{
+    height: 100vh;
+    overflow: hidden;
+    width: calc(100% - 250px);
+    position: absolute;
+    margin: 0 auto;
+}
+.Allitems h3{
+    color: var(--stxtcolor);
+    position: relative;
+    top: 1rem;
+    text-align: center;
+}
+.itemsTable{
+    position: relative;
+    display: grid;
+    grid-template-columns: 49% 48%;
+    top: 1rem;
+    left: 1.7%;
+    height: fit-content;
+}
+.botmarg{
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+.UserPanelEditItem{
+    display: flex;
+    position: relative;
+    width: 98%;
+    height: 300px;
+    background:var(--cfgBg);
+    border: 1px solid var(--borderscolor);
+    margin: .5rem auto; 
+    border-radius: 10px;
+    
+}
+.UPEIimg{
+    margin: 1rem;
+    width: fit-content;
+    scale: 1.05;
+}
+.UPEIimg img{
+    width: 18rem;
+    top: 50%;
+    position: relative;
+    transform: translateY(-45%);
+    position: relative;
+}
+.UPEIinfo{
+    position: relative;
+    height: fit-content;
+    top: 10%;
+    display: grid;
+    color: var(--blacktxt);
+    font-size: 1.2rem;
+}
+.UPEIinfo div{
+    overflow-x: auto;
+    margin: 0.2rem 0.4rem;
+}
+.UPEIinfo span{
+    color: var(--stxtcolor);
+}
+.editItemVal{
+    user-select: none;
+    width: fit-content;
+    height: fit-content;
+    background: #5138ee;
+    color: var(--txtcolor);
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 5%;
+    cursor: pointer;
+    right: 3%;
+    transition: all 0.4s;
+    border-radius: 10px;
+}
+.changeMotion{
+    cursor: pointer;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    font-size: 1.5rem;
+    color: var(--blacktxt);
+}
+
+
+.AddnewItemToShopUser{
+    top: 0.7rem;
+    z-index: 2100;
+    right: 4.4rem;
+    position:absolute;
+    cursor: pointer;
+    background: var(--stxtcolor);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ServerMenagmentUserP{
+    background: var(--cfgBg);
+    position: absolute;
+    z-index: 1000;
+    width: 70rem;
+    height: 45rem;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-25%) ;
+    border: 2px solid var(--stxtcolor);
+    overflow: hidden;
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    transition: all 0.4s;
+}
+.SMUPmenu{
+    width: 14rem;
+    height: 100%;
+    border-right: 1px solid var(--borderscolorT);
+    border-radius: 25px 0 0 0;
+}
+.SMUPmenuItem{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom:  1px solid var(--borderscolorT);
+    position: relative;
+    top: 20%;
+    cursor: pointer;
+    border-collapse: collapse;
+}
+.SMUPclose{
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 0.65rem;
+    
+}
+.SMUPactive{
+    text-shadow: 0 0 4px #ffffff;
+}
+.SMUPcontainer{
+    width: calc(100% - 14rem);
+    height: 100%;
+}
+.MenageCateory{
+    width: 100%;
+    height: 100%;
+}
+
+.upepContent{
+    display: flex;
+}
+.editMenu{
+    position: absolute;
+    z-index: 1;
+    user-select: none;
+    width: 250px;
+    height: 100vh;
+    right: 0;
+    background: var(--cfgBg);
+    color: var(--blacktxt);
+}
+.editMenuItem{
+    position: relative;
+    cursor: pointer;
+    left: 50%;
+    top: 25%;
+    font-size: 1.2rem;
+    transform: translateX(-25%);
+    transition: all 0.3s;
+}
+ .editMenuItem:hover{
+    color: var(--blacktxt);
+}
+ .editMenuItemActive{
+    text-shadow: 0 0 4px var(--blacktxt);
+    color: var(--blacktxt);
+}
+.przedmioty{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+.Allitemscategory{
+    transition: all .4s;
+    position: absolute;
+}
+.kategorie{
+    width: 100%;
+    height: 100vh;
+    transform: translateY(100%);
+    
+}
+.zestawy{
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: translateY(100%);
+}
+.AddNewZestaw{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 3rem;
+}
+.allComplets{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    
+    top:5rem;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 49% 48%;
+    
+}
+.Complet{
+    display: flex;
+    position: relative;
+    width: 98%;
+    height: 300px;
+    background:var(--cfgBg);
+    border: 1px solid var(--borderscolor);
+    margin: .5rem auto; 
+    border-radius: 10px;
+}
+.Compright div{
+    margin: 1rem;
+    width: 80%;
+    color: var(--blacktxt);
+}
+.Compright span{
+    color: var(--stxtcolor);
+}
+.AddNewZestaw span{
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 1.6rem;
+    background: var(--stxtcolor);
+    border-radius: 5px;
+    padding: 5px 10px;
+    user-select: none;
+}
+.EditComp{
+    position: absolute;
+    width: fit-content;
+    bottom:4%;
+    right: 2%;
+    background: var(--stxtcolor);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.AddNewCategory{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 3rem;
+}
+#ADcU{
+    position: absolute;
+    top: 1.5rem;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.AddNewCategory span{
+    cursor: pointer;
+    position: absolute;
+    right: 19%;
+    top: 1.6rem;
+    background: var(--stxtcolor);
+    border-radius: 5px;
+    padding: 5px 10px;
+    user-select: none;
+}
+.AllCategories{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    max-height: 80%;
+    top:5rem;
+    padding: 10px;
+}
+.CategoryItemEz{
+    background: #303030;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    float: left;
+    margin: 0.4rem;
+}
+.CatTitle{
+    margin: 0.4rem;
+}
+.CatRemove{
+    margin: 0.4rem;
+    background: red;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.CantRemove{
+    margin: 0.4rem;
+    background: rgb(255, 5, 5);
+    opacity: 0.6;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    pointer-events: none;
+}
+.motyw{
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    transform: translateY(100%);
+}
+.frameEdit{
+    top: 0rem;
+    position: relative;
+    margin: auto;   
+    width:100%;
+    height: 100%;
+}
+.themeOptions{
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    background: var(--cfgBg);
+    transition: all .4s;
+    transform: translateY(100%);
+}
+.closeThemes{
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    color: var(--blacktxt);
+    cursor: pointer;
+}
+.AllTheme{
+    position: relative;
+    min-height: calc( 100vh - 8rem);
+    max-height: calc( 100vh - 8rem);
+    overflow: auto;
+    height: fit-content;
+    top: 2rem;
+}
+.themea{
+    color: var(--blacktxt);
+    width: 90%;
+    height: 4rem;
+    position: relative;
+    margin: 1rem auto;
+    background: var(--bgColor);
+    border-radius: 10px;
+}
+.thDesc{
+    position: absolute;
+    top: 1.7rem;
+    padding: 0.1rem .7rem;
+}
+.thTitle{
+    padding: 0.1rem .7rem;
+    position: absolute;
+    top: 0.1rem;
+}
+.thColor{
+    position: absolute;
+    cursor: pointer;
+    right: .7rem;
+    height: 1.7rem;
+    width: 90%;
+    top: 1.8rem;
+}
+
+.social{
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    transform: translateY(100%);
+}
+
+
+
+
+
+
+/*rabaty*/
+
+.UserPanelRecipes{
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    transition: transform 0.7s;
+    transform: translateY(100%);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.recipecontainer{
+    width: 97%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    color:var(--txtcolor);
+}
+.asdasdasd{
+    width: 50%;
+}
+.generateRecipe{
+    width: 96%;
+    background: var(--cfgBg);
+    border-radius: 25px;
+    height: 16vh;
+    margin-left:12px ;
+    position: relative;
+    top: 3vh;
+    padding: 15px;
+   
+}
+.recipecontainer h3{
+    color:var(--htext);
+}
+.AvaibleRecipes{
+    width: 96%;
+    background: var(--cfgBg);
+    border-radius: 25px;
+    height: 50vh;
+    margin-left:12px ;
+    position: relative;
+    top: 6vh;
+    padding: 15px;
+    color: var(--blacktxt);
+}
+.RecipesHistory{
+   
+    width: 49%;
+    background: var(--cfgBg);
+    border-radius: 25px;
+    height: 69.5vh;
+    margin-left:12px ;
+    position: relative;
+    top: 3vh;
+    padding: 15px;
+    color: var(--blacktxt);
+}
+
+.AddNewPrzedmiot{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 3rem;
+    cursor: pointer;
+}
+.AddNewPrzedmiot span{
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: -1.6rem;
+    background: var(--stxtcolor);
+    border-radius: 5px;
+    padding: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+}
+.AddNewItemToShop.n{
+    position: fixed;
+    transition: all 0.5s;
+    top: 5rem;
+    left: 42%;
+    transform: translateX(220%);
+    width: 30rem;
+    height: 40rem;
+    background: #181e30;
+    z-index: 99999999999;
+    display: block;
+    box-shadow: inset 0 0 10px #5138ee;
+    border-radius: 15px;
+}
+.AddNewItemToShop input{
+    width: 80%;
+    margin: auto !important;
+    position: relative;
+    left: 10%;
+    border: none;
+    border-bottom:1px solid #fff ;
+    outline: none;
+    height: 3rem;
+    font-size: 1.2rem;
+    color: #fff;
+    top: 2rem;
+}
+.AddNewItemToShop select{
+    width: 80%;
+    margin: auto !important;
+    position: relative;
+    left: 10%;
+    border: none;
+    background: transparent;
+    transition: all 0.4s;
+    border-bottom:1px solid #fff ;
+    outline: none;
+    height: 3rem;
+    font-size: 1.2rem;
+    top: 2.2rem;
+    color: #fff;
+}
+.AddNewItemToShop select option{
+    background: transparent;
+    color: black;
+}
+.AddNewItemToShop h2{
+    position: relative;
+    top: 2rem;
+    left: 0%;
+    text-align: center;
+}
+.SubAddNewItem{
+    position: relative;
+    top: 3.5rem;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    padding: 10px;
+    background: #5138ee;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.SubAddNewItem.canal{
+    top: 5rem;
+}
+.SubAddNewItem.remove{
+    top: 4.2rem;
+}
+.SubAddNewItem:hover{
+    background: #6a55f1; 
+}
+.AddNewItemToShop.u{
+    position: fixed;
+    transition: all 0.5s;
+    top: 5rem;
+    left: 42%;
+    transform: translateX(250%);
+    width: 30rem;
+    height: 40rem;
+    background: #181e30;
+    z-index: 99999999999;
+    display: block;
+    box-shadow: inset 0 0 10px #5138ee;
+    border-radius: 15px;
+}
+.AddNewItemToShop.zn{
+    position: fixed;
+    transition: all 0.5s;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(250%);
+    width: 30rem;
+    height: 40rem;
+    background: #181e30;
+    z-index: 99999999999;
+    display: block;
+    box-shadow: inset 0 0 10px #5138ee;
+    border-radius: 15px;
+}
+.AddNewItemToShop.zu{
+    position: fixed;
+    transition: all 0.5s;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(250%);
+    width: 30rem;
+    height: 40rem;
+    background: #181e30;
+    z-index: 99999999999;
+    display: block;
+    box-shadow: inset 0 0 10px #5138ee;
+    border-radius: 15px;
+}
+.AvaibleRecipes tr,
+.RecipesHistory tr{
+    width: 100%;
+    margin: auto;
+    background: rgba(41, 41, 41, 0);
+    height: 3rem;
+    border-bottom:1px solid rgba(104, 99, 168, 0);
+
+}
+.AvaibleRecipes th,
+.RecipesHistory th{
+    text-align: center;
+    width: 15.8rem;
+    border-bottom:1px solid rgba(104, 99, 168, 0);
+}
+.AvaibleRecipes td,
+.RecipesHistory td{
+    text-align: center;
+    word-wrap: break-word;
+    padding: 5px;
+    width: 15.8rem;
+    border-bottom:1px solid rgba(104, 99, 168, 0);
+}
+.DelCodFee{
+    padding: 10px;
+    transition: all 0.5s;
+    background: var(--stxtcolor);
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+.DelCodFee:hover{
+    background: #6d59ee;
+}
+.genCodefee{
+    display: flex;
+}
+.genCodefee input{
+    margin: 0 1rem;
+}
+.addNewFeeCode{
+    transition: all 0.5s;
+    position: relative;
+    width: 96%;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 1rem auto;
+    text-align: center;
+    background: var(--stxtcolor);
+    cursor: pointer;
+}
+.addNewFeeCode:hover{
+    background: #6a55f3;
+}

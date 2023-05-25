@@ -1,0 +1,410 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #5c5c5c;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3E91F3;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3E91F3;
+  }
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--txtcolor);
+    background:var(--bgColor);
+   
+}
+.holder{
+  
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.loginForm{
+    overflow: hidden;
+    display: block;
+    width: 280px;
+    background: #202020;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 8px rgba(0, 0, 0, 0.712);
+}
+.loginForm div, input{
+    position: relative;
+    top: 10%;
+    background: transparent;
+}
+input[type="text"],input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    width: 80%;
+    padding: .3rem;
+}
+input[type="submit"]{
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    width: 80%;
+    padding: .3rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+input[type="submit"]:hover{
+    background: #051b96;
+    border: 1px solid #051b96;
+}
+input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+.PanelHold{
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+}
+.contentHold{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    top: 5vh;
+}
+.welcome{
+    width: 100%;
+    height: 9vh;
+    border-radius: 10px;
+
+}
+.welContent{
+    position: relative;
+    text-align: center;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.config{
+
+    height: 80vh;
+    width: 96%;
+    border-radius: 10px;
+    margin: 1rem auto;
+}
+/* jasne #f5f6f8 #fff*/
+.containerPanelAdmin{
+    user-select: none;
+    background: rgb(0, 0, 44);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.serversList{
+    user-select: none;
+    background: rgb(7, 0, 22);
+    width: 360px;
+    height: 100%;
+}
+.AddServer{
+    width: 270px;
+    height: fit-content;
+    background: rgb(7, 1, 90);
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    left: 15px;
+    top: 7vh;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.AddServer:hover{
+    background: rgb(50, 35, 187);
+}
+
+.Slist::-webkit-scrollbar{
+    display: none;
+}
+.Slist{
+    width: 270px;
+    height: fit-content;
+    max-height: 85vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgb(7, 1, 90);
+    border-radius: 4px;
+    text-align: center;
+    padding: 0px 0;
+    position: relative;
+    left: 15px;
+    top: 5vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.serverC{
+    font-size: 1.2rem;
+    text-align: center;
+    height: 75px;
+    border-bottom: 1px solid #ffffff50;
+    line-height: 75px;
+    transition: all 0.3s;
+    
+}
+.serverC:hover{
+   background: #323b61;
+}
+.serverC img{
+    position: absolute;
+    width: 50px;
+    color: #323b61;
+    right: 4%;
+    transform: translateY(30%);
+}
+.active{
+    background: #323b61;
+}
+.serverInfo{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0);
+    display: flex;
+}
+.sipadding{
+    background: rgba(255, 0, 0, 0);
+    width: 97%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    display: block;
+}
+
+.MoneyHist{
+    position: relative;
+    top: 3vh;
+    padding: 10px;
+    width: 73.5%;
+    height: 57.5vh;
+    background: rgb(18, 15, 59);
+    border-radius: 5px;
+
+}
+.MoneyHist h3{
+    position: relative;
+    text-align: center;
+    color: rgb(0, 167, 245);
+}
+.ww{
+    position: relative;
+    width: 93%;
+    top: -3vh;
+}
+.llp{
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: 4vh;
+    background: rgb(18, 15, 59);
+    width: 73.5%;
+    border-radius: 5px;
+
+}
+.llp h3{
+    color: rgb(0, 167, 245);
+}
+.lastpuh{
+    width: 100%;
+    position: relative;
+    height:55vh;
+    max-height: 30vh;
+    overflow-y: auto;
+    border-radius: 5px;
+    
+}
+.lastpuh table{
+    border-left:2px solid rgb(24, 149, 207);
+}
+tr{
+    width: 100%;
+    margin: auto;
+    background: rgba(41, 41, 41, 0);
+    height: 3rem;
+    border-bottom:2px solid rgb(18, 15, 59);
+
+}
+th{
+    text-align: center;
+    width: 15.8rem;
+    border-bottom:10px solid rgb(18, 15, 59);
+}
+td{
+    text-align: center;
+    word-wrap: break-word;
+    padding: 5px;
+    width: 15.8rem;
+    border-bottom:10px solid rgb(18, 15, 59);
+}
+.moneyInfoEz{
+    top: 3vh;
+    right: 2.2vw;
+    width: 20vw;
+    height: 95vh;
+    background: rgb(18, 15, 59);
+    border-radius: 5px;
+    position: absolute;
+    
+}
+.ActualMoney{
+    text-align: center;
+    width: 100%;
+    height: 5rem;
+    background: rgba(255, 0, 0, 0);
+    top: 1rem;
+    position: relative;
+    color: rgb(24, 149, 207);
+}
+.ActualMoney p{
+    width: 90%;
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+    position: relative;
+    margin: auto;
+    border-bottom: 1px solid rgb(24, 149, 207);
+    color: #fff;
+}
+.LogHist{
+    position: absolute;
+    bottom:  0.5rem;
+    left: 5%;
+    text-align: center;
+    width: 90%;
+    height: fit-content;
+    overflow-y: auto;
+    height: fit-content;
+    max-height: 80vh;
+   
+    margin: auto;
+}
+.Thold{
+    width: 98%;
+}
+
+.LogHist thead tr:nth-child(1){
+    border-top: 1px solid rgb(24, 149, 207);
+    border-right: 1px solid rgb(24, 149, 207);
+}
+.LogHist tr{
+    border-left: 1px solid rgb(24, 149, 207);
+    border-right: 1px solid rgb(24, 149, 207);
+}
+.endoftabez{
+    width: 98%;
+    position: relative;
+    top: -0.63rem;
+    border-bottom: 1px solid rgb(24, 149, 207);
+}
+.addNewServerD{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    background: #202020;
+    width: 50vw ;
+    height: 70vh;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.addNewServerD form{
+    text-align: center;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    gap: 2rem;
+    background:#0e0e0e00;
+    margin: auto;
+    width:70%;
+    min-width:350px;
+    right:0;
+    padding:10rem 1rem;
+    color:black;
+}
+.addNewServerD input{
+    outline:none;
+    background:white;
+    color:black;
+    width:100%;
+    padding:0.5rem;
+    border:none;
+    border-bottom:0.1rem solid white;
+}
+
+#subReg{
+    cursor:pointer;
+    outline:none;
+    background: white;
+    color: #000;
+    border:none;
+    padding:0px;
+    font-size:1.2rem;
+    overflow: hidden;
+    position: relative;
+    top: -.5rem;
+    height: 3rem;
+    transition: all 0.4s;
+    
+}
+.addNewServerD button{
+    overflow: hidden;
+    
+}
+#subReg p {
+    position:relative;
+   
+    transform:translateY(30%);
+}
+
+#subReg:hover{
+    transform:translateX(0%);
+    position:relative;
+    content:'';
+    display: block;
+    color: #fff;
+    background:#323b61;
+}
+.closeNSD{
+    position: absolute;
+    font-size: 2rem;
+    cursor: pointer;
+    right: 1rem;
+}
+.logoutMapan{
+    position: absolute;
+    font-size: 2rem;
+    left: 1rem;
+    cursor: pointer;
+}
