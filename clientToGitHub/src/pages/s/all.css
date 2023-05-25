@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+*{
+
+    padding: 0;
+    margin: 0;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0a0909;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1d0a47;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1d0a47;
+  }
+.container-fluid{
+    padding: 0;
+}
+.lfBG{
+    padding: 0;
+    background:linear-gradient(70deg,#131214,#0c041f 70%);
+    
+}
+.navbar{
+    width: 100%;
+    height: 13vh;
+    background:linear-gradient(70deg,#110e18,#0c041f 70%);
+    border-bottom: 1px solid #444444;
+  
+}
+.banerTop{
+    width: 100%;
+    height: 30vh;  
+    text-align: center;
+}
+.banerTop h1{
+    position: relative;
+    top: 30%;
+}
+.banerTop h3{
+    position: relative;
+    top: 30%;
+}
+
+.items{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10vh;
+}
+.item{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s;
+    height: 35vh;
+    background: rgb(18, 18, 32);
+    border-radius: 15px;
+    border: 3px solid rgb(33, 25, 51);
+    cursor: pointer;
+    user-select: none;
+}
+.item:hover{
+    border: 3px solid rgb(24, 153, 34);
+}
+.item:hover > .ItemImg{
+    scale: 1.15;
+}
+.ItemImg{
+    position: relative;
+    top:45%;
+    left: 0%;
+    transition: all 0.3s;
+    transform: translateY(-70%) scale(1.2);
+}
+
+.ItemTytul{
+    position: relative;
+    top: 28%;
+    left: -0%;
+}
+.ItemCena{
+    position: absolute;
+    left: 70%;
+    top: 6%;
+    width: fit-content;
+}
+.ItemCena h5{
+    background: rgb(24, 153, 34);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.ItemOpis{
+    position: relative;
+    top: 27%;
+    left: 0%;
+    text-align: left;
+    width: 100%;
+}
+.Ending{
+    width: 100%;
+    min-height: 40vh;
+    height: fit-content;
+    border-top: 1px solid #444444;
+}
+.Buymenu{
+    width: 100%;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.Buymenu .row{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+.Buymenu .col-md-3{
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+.Buymenu .col-md-3:hover{
+    color: rgb(79, 39, 189);
+}
+.Buymenu .active{
+    background: linear-gradient(rgba(255, 0, 0, 0) 30%, rgb(38, 11, 112));
+    background-size: 200% 280%;
+    background-position: 200% 0%;
+    animation: optBackgroundShow 0.4s both ;
+}
+.Ending .row,.Ending .col-12{
+    margin-right: 0; 
+    margin-left: 0;
+    text-align: center;
+    padding: 0;
+}
+.ServerInfo{
+    padding: 0;
+    margin: 0;
+    height: 10vh;
+    border-bottom: 1px solid #444444;
+}
+.lastSale{
+    display: flex;
+    overflow: hidden;
+}
+.lastSale div{
+    margin: 0 2rem;
+    display: flex;
+   
+}
+.online{
+    height: 100%;
+    border-right: 1px solid #444444;
+}
+.online div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-55%);
+}
+.about{
+    height: 20vh;
+    text-align: justify;
+    margin-top: 5vh;
+    border-bottom: 1px solid #444444;
+}
+.opisA{
+    text-align: justify;
+    position: relative;
+    top: 10%;
+    height: 7vh;
+}
+.CCR{
+    height: 10vh;
+}
+
+.CCR .col-6 div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.crp {
+    text-align: left;
+}
+.crp div{
+    text-align: left;
+}
+.abo{
+    position: relative;
+    top: 40%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+.abo .col-6{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.664);
+}
+.abo .col-6 div{
+    cursor: pointer;
+    margin:1rem 1rem 1rem 0rem;
+}
+.abo .col-6 div:hover{
+  color: #fff;
+}
+@media screen and (max-width:800px) {
+    .items .row{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .ItemImg img{
+        width: 14vw;
+        margin: auto
+    }
+    .ServerInfo{
+        padding: 0;
+        margin: 0;
+        min-height: 20vh;
+        border-bottom: none;
+    }
+    .lastSale{
+        display: flex;
+        overflow: hidden;
+        height: 50%;
+        border-bottom: 1px solid #444444;
+    }
+    .lastSale div{
+        position: relative;
+        top: 50%;
+        
+        transform: translateY(-15%);
+        display: flex;
+       
+    }
+    .online{
+        height: 50%;
+        border-right: none;
+        border-bottom: 1px solid #444444;
+    }
+    .online div{
+        position: relative;
+        top: 50%;
+        transform: translateY(-55%);
+    }
+    .opisA{
+        text-align: left;
+        position: relative;
+        top: 10%;
+        height: 7vh;
+    }
+  
+}
+.UserSteam img{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+}
+.UserSteam {
+    text-align: right;
+
+}
+.UserSteam p{
+    position: relative;
+    right: 55px;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    top: 25px;
+}
+.UserSteam span{
+    position: relative;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    right: 5px;
+    top: 10px;
+}
+@media screen and (max-width:700px) {
+  
+    .ItemImg img{
+        width: 20vw;
+        margin: auto
+    }
+}
+@media screen and (max-width:500px) {
+  
+    .ItemImg img{
+        width: 30vw;
+        margin: auto
+    }
+    .abo{
+        position: relative;
+        top: 37%;
+        left: 0;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (min-width: 992px){
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 24%;
+    }
+}
+@keyframes optBackgroundHide {
+    0%{
+        background-position: 200% 50%;
+    }
+    100%{
+        background-position: 200% 0%;
+    }
+}
+@keyframes optBackgroundShow {
+    0%{
+        background-position: 200% 0%;
+    }
+    100%{
+        background-position: 200% 50%;
+    }
+}

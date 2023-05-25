@@ -1,0 +1,115 @@
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.MainDivAllServers{
+    width: 100vw;
+    height: 100vh;
+
+    display: block;
+}
+.MaintopDiv{
+    position: relative;
+    width: 100vw;
+    height: 100px;
+    background: rgba(20, 27, 45, 1);
+}
+.MainMainDiv{
+    position: relative;
+    width: 100vw;
+    height: calc(100% - 175px);
+    background:url(BGSID.png),  rgba(34, 43, 64, 1);
+    background-blend-mode:color-dodge;
+}
+.MainbotDiv{
+    position: relative;
+    width: 100vw;
+    height: 75px;
+    bottom: 0;
+    background: rgba(20, 27, 45, 1);
+}
+.ServersDiv{
+    box-sizing: border-box;
+    position: relative;
+    width: 70%;
+    height: 90%;
+    margin: auto;
+    top: 5%;
+    background: #141B2D;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+.ggH1{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    color: white;
+    top: 2rem;
+}
+.ggH1 h3{
+    color: #FFFFFF;
+    margin: 0.7rem;
+}
+.ggH1 span{
+    position: relative;
+    top: 1rem;
+    color: #898989;
+}
+.stCststas{
+    position: relative;
+    top: 4rem;
+    width: 90%;
+    margin: auto;
+   
+}
+.serverDiv{
+    scale: 0.9;
+    cursor: pointer;
+    transition: all 0.6s;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    width: 219px;
+    height: 241px;
+    margin:1.5rem 1rem;
+    background: #222B40;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transform: translateX(0%) translateY(0%);
+    z-index: 2;
+}
+.serverDiv:hover{
+    background:#404b8a ;
+    transform: translateX(0%) translateY(-2%);
+}
+
+.serverLabel{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    bottom: 0;
+    background: #040B1B;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 140%;
+    font-size: 1.6rem;
+    left: 50%;
+    transform: translateY(40%) translateX(-50%);
+}
+.serverImage{
+    position: relative;
+}
+.serverImage img{
+    position: absolute;
+    width: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+}
